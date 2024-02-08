@@ -9,7 +9,23 @@ import java.util.Scanner;
 public class Wally{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
-		String[] nomes = sc.nextLine().split("\\s+");
+		while(true){
+			String[] nomes = sc.nextLine().split(" ");
+			String resp = "";
+			for(String i : nomes){
+				if(i.equals("wally")){
+					break;
+				}
+
+				else if(i.length() == 5){
+					resp = i; 
+				}
+
+
+			}
+			
+		System.out.println(resp);
+		}
 
 	}
 }
